@@ -1,13 +1,16 @@
-import sys
+# Create Grader Class
 class Grader:
+    # Create Get Grade function
     def GetGrade():
+      # ask for users name, assignment, and grade
       name = input("What is your name? ")
       print(name)
       assignment = input("What is your assignment name? ")
       print(assignment)
       grade = int(input("what is your grade? "))
       print(grade)
-
+      print("\r\n******************************\r\n"); 
+      # conditional for the grade letter value
       if (grade < 100 and grade >= 90):
         print(name + " got an A on assignment: " + assignment)
       elif (grade < 90 and grade >= 80):
@@ -20,6 +23,9 @@ class Grader:
         print(name + " got an F on assignment: " + assignment)
       else:
         print("Not a valid grade. Enter a number between 0 - 100")
+      # Say goodbye
+      print("\r\n******************************\r\n");  
+      print("Good Bye :)\r\n");
 
-
-object = Grader.GetGrade()
+# Create an instance of the class function
+Grader.GetGrade()
